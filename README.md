@@ -1,6 +1,6 @@
 # Coordinate Highlighter
 
-A Chrome browser extension that highlights events with duplicate coordinates in Sportlogiq's EventorApp.
+A Chrome browser extension that highlights events with duplicate coordinates in EventorApp.
 
 ## Overview
 
@@ -24,7 +24,7 @@ The Coordinate Highlighter extension helps identify events that share the same c
 
 ## Usage
 
-1. Navigate to `https://app.sportlogiq.com/EventorApp.php`
+1. Navigate to EventorApp
 2. Click the Coordinate Highlighter extension icon in your browser toolbar
 3. Toggle the "Highlight Duplicates" switch to enable/disable the feature
 4. Events with duplicate coordinates will be marked with green flag icons in the first column
@@ -65,7 +65,7 @@ The extension requires the following permissions:
 - `storage`: To save user preferences
 - `activeTab`: To interact with the current tab
 - `scripting`: To inject scripts into the page
-- `host_permissions`: Access to `https://app.sportlogiq.com/*`
+- `host_permissions`: Access to EventorApp
 
 ## Browser Compatibility
 
