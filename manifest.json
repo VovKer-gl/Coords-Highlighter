@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Coordinate Highlighter",
+  "version": "1.0",
+  "description": "Highlights events with duplicate coordinates in the event list.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://app.sportlogiq.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.sportlogiq.com/EventorApp.php*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://app.sportlogiq.com/*"]
+    }
+  ]
+}
